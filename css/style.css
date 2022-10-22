@@ -1,0 +1,305 @@
+/* -------------------
+    banner section
+---------------------*/
+/*============= banner section start ==============*/
+header{
+    background-color: #061414;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    overflow: hidden;
+}
+header .menu{
+    padding-top: 18px;
+}
+header .header-description{
+    position: relative;
+    z-index: 2;
+}
+header .menu ul{
+    float: right;
+}
+header .menu ul li{
+    float: left;
+}
+header .menu ul li:not(:last-child) a{
+    margin-right: 30px;
+    color: #fff;
+    font-size: 15px;
+    transition: all .3s;
+    position: relative;
+}
+header .menu ul li:not(:last-child):hover a{
+    color: #fa7236;
+}
+header .menu ul li:not(:last-child) a::after{
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: #fa7236;
+    content: "";
+    top: 100%;
+    left: 50%;
+    transition: all .3s;
+    transform: translateX(-50%);
+}
+header .menu ul li:not(:last-child):hover a::after{
+    width: 100%;
+}
+header .menu ul li:last-child a{
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 15px 25px;
+    background-image: linear-gradient(140deg, #f47944, #ee015c);
+    transition: all .3s;
+    border-radius: 50px;
+}
+header .menu ul li:last-child a:hover{
+    background-image: linear-gradient(140deg, #ee015c, tomato);
+}
+header .menu ul li:last-child a img{
+    height: 10px;
+}
+/* header container */
+header .header-text h1{
+    font-size: 60px;
+    font-weight: 100;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(140deg, #ee015c, #f47944);
+    -webkit-background-clip: text;
+    line-height: 72px;
+    margin-bottom: 56px;
+}
+header .header-text{
+    padding: 140px 0;
+}
+header .header-text p{
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 140px;
+}
+/* header form */
+header .header-search-form{
+    position: relative;
+}
+header .header-search-form input{
+    width: 100%;
+    border: 0;
+    padding: 25px 215px 25px 35px;
+    border-radius: 50px;
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400px;
+}
+header .header-search-form button{
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    padding: 20px 35px;
+    background-color: #fc3d4d;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+header .header-search-form button:hover{
+    background-color: #ee015c;
+}
+header .header-search-form button i{
+    margin-left: 5px;
+}
+/* header price */
+header .header-price{
+    padding-top: 30px;
+}
+header .header-price span{
+    color: white;
+    font-size: 16px;
+    margin-right: 22px;
+}
+header .header-price a{
+    color: #f47944;
+    border-bottom: 1px dotted;
+}
+header .header-price a:hover{
+    color: #fc3d4d;
+}
+/* header image */
+header .header-image{
+    position: relative;
+}
+header .header-image img{
+    position: absolute;
+    top: -76px;
+    left: -174px;
+}
+/* price section start */
+.price{
+    background-color: #061414;
+    padding-bottom: 80px;
+}
+.price .single-price{
+    padding: 35px 35px 50px 50px;
+    background-image: linear-gradient(140deg, #049EC0, #04D3D5);
+    margin-bottom: 80px;
+    overflow: hidden;
+    transition: all .2s;
+}
+.price .single-price:hover{
+    transform: scale(1.05);
+}
+.price .container .col-1-of-4{
+    width: calc(100% / 4);
+}
+.price .container .col-1-of-4:nth-child(2) .single-price{
+    background-image: linear-gradient(140deg, #fa7236, #ff1061);
+}
+.price .container .col-1-of-4:nth-child(3) .single-price{
+    background-image: linear-gradient(140deg, #b35fce, #5c27fe);
+}
+.price .container .col-1-of-4:nth-child(4) .single-price{
+    background-image: linear-gradient(140deg, #fcb53e, #ff7b02);
+}
+.price .single-price .price-header{
+    display: flex;
+}
+.price .single-price .price-header .price-header-image, 
+.price .single-price .price-header .price-header-text{
+    width: 50%;
+}
+.price .single-price .price-header .price-header-image img{
+    margin-left: -135px;
+    margin-top: -17px;
+} 
+.price .single-price .price-header .price-header-text h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 13px;
+    padding-top: 15px;
+}
+.price .single-price .price-header .price-header-text p{
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    line-height: 20px;
+    margin-bottom: 45px;
+}
+.price .single-price .price-header .price-header-text h4{
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+    line-height: 24px;
+    margin-bottom: 13px;
+}
+.price .single-price .price-header .price-header-text span{
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    line-height: 24px;
+    margin-bottom: 13px;
+}
+.price .single-price .price-body{
+    padding-top: 5px;
+
+}
+.price .single-price .price-body ul{
+    min-height: 200px;
+}
+.price .single-price .price-body ul li{
+    font-size: 15px;    
+    color: white;
+    line-height: 30px;
+    font-weight: 400;
+}
+.price .single-price .price-body ul li:first-child{
+    font-weight: 700;
+}
+.price .single-price .price-body .price-btn{
+    padding: 17px 40px;
+    color: white;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-transform: uppercase;
+
+}
+.price .single-price .price-body .price-btn:hover{
+    background-color: white;
+    color: #fc3d4d;
+}
+.price .price-footer{
+    color: #8998af;
+}
+.price .price-footer span, 
+.price .price-footer i{
+    color: #fc3d4d;
+}
+.price .price-footer p{
+    font-size: 18px;
+}
+.price .price-footer h4{
+    font-size: 24px;
+}
+/* price section end */
+/* plan section start */
+.plan{
+    background-color: #0d1023;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    margin-bottom: 50px;
+}
+.plan h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    padding-bottom: 35px;
+}
+.plan .single-plan{
+    padding: 8px 55px 8px 8px;
+    background-color: #262839;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.plan .single-plan i:not(.icon-right){
+    height: 40px;
+    width: 40px;
+    background-color: #353848;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 15px;
+    color: #04d1d4;
+}
+.plan .single-plan span{
+    color: #8998af;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.plan .single-plan i.icon-right{
+    position: absolute;
+    color: #34b358;
+    font-size: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+/* plan section end */
+
+
+
+/*============= banner section end ============*/
